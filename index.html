@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1>UK BMI Calculator</h1>
+
+    <form>
+      <label for="bmiWeight">Your Current Weight (in kgs)</label><br />
+      <input class="inputBox" id="bmiWeight" type="input" placeholder="Please enter your weight in Kgs" /><br />
+      <label for="bmiHeight">Your Current Height (in cms)</label><br />
+      <input class="inputBox"  id="bmiHeight" type="input" placeholder="Please enter your height in meters e.g. 1.63" /><br />
+      <input class="numberInput" id="bmiAge" type="number" min="1" max="120" /><br />
+      <script>
+        function calculateBMI(){
+          let height = parseFloat(document.getElementById('bmiHeight').value);
+          let weight = parseFloat(document.getElementById('bmiWeight').value);
+          let age = document.getElementById('bmiAge').value;
+          let BMIValue = weight/Math.pow(height, 2);
+          
+          console.log(`height: ${height}, weight: ${weight}, age: ${age}, BMI: ${BMIValue.toFixed(2)}`);
+          document.getElementById('BMI_result').innerText = "Your BMI is " + BMIValue.toFixed(2);
+          
+        }
+      </script>
+      <input class="submitButton" type="button" value="Calculate MY BMI" onclick="calculateBMI()" /> 
+      <div id="BMI_result"></div>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>

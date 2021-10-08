@@ -1,0 +1,49 @@
+.inputBox{
+  width: 80%;
+  line-height: 1.6rem;
+ 
+}
+
+.numberInput, .inputBox{
+  font-size: 1.3rem;  
+  padding: 0.3rem;  
+  margin-bottom: 1%;
+}
+
+.numberInput{
+  width: 10%;
+}
+
+#BMI_result{
+  font-size: 2.6rem;
+  margin: 0.7rem 0;
+  border: 2px solid darkcyan;
+  background-color: darkmagenta;
+  color: white;
+  font-family: aettenschweiler, 'Arial Narrow Bold', sans-serif;
+  padding: 0.8rem;
+}
+
+.submitButton{
+  padding: 0.8rem;
+  font-size: 1.2rem;
+  background-color: darkcyan;
+  color: white;
+}
+
+h1{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 3.4rem;
+  color: darkcyan;
+  border-bottom: 2px solid darkmagenta;
+
+}
+
+
+label{
+  font-weight: bolder;
+  font-size: 1.2rem;
+  font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  display: inline-block;
+  margin-bottom: 1%;
+}
